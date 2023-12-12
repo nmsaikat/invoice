@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #45818e;
+    --secondary-color: #274e13;
+    --light-color: #434343;
+    --table-bg-color: #f5f5f5;
+    --extra-light-color: #999999;
+ }
+ body {
+    background-color: #eeee;
+ }
+
+ #main {
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 70vh;
+    margin-top: 40px;
+    border-top: 15px solid var(--primary-color);
+    padding: 20px 40px;
+    background-color: var(--table-bg-color);
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ p {
+    margin: 0;
+    padding: 0;
+ }
+
+ .underline-text {
+    text-decoration: underline;
+    color: var(--primary-color);
+ }
+
+ .light-text {
+    color: var(--light-color);
+ }
+
+ .title {
+    color: var(--secondary-color);
+ }
+
+ .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .header-section--title {
+    margin-block: 20px;
+ }
+
+ .header-section--details {
+    display: flex;
+    gap: 20px;
+ }
+
+ .client-details {
+    margin-block: 20px;
+    border-top: 2px double var(--primary-color);
+    border-bottom: 2px double var(--primary-color);
+
+    padding-block: 10px;
+ }
+
+ .data-table-details {
+    border-bottom: 0.5px solid;
+ }
+
+ .client-details-table,
+ .data-table-details {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+ }
+
+ tr,
+ td,
+ th {
+    padding: 5px;
+    text-align: left;
+ }
+
+ .data-table-details tr:nth-child(even) {
+    background-color: var(--table-bg-color);
+ }
+
+ .client-details-table--heading th,
+ .data-table-details--heading th {
+    font-weight: 700;
+    font-size: 1rem;
+ }
+
+ .data-table-details--heading th {
+    width: 70%;
+    text-decoration: underline;
+    color: var(--primary-color);
+
+    padding-bottom: 10px;
+ }
+
+ .subtotal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--extra-light-color);
+ }
+
+ .other-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+ }
+
+ .other-section div:nth-child(2) {
+    display: flex;
+    gap: 5px;
+ }
+
+ .total-price-section {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+ }
+
+ .total-price-section h2 {
+    color: var(--primary-color);
+ }
+
+ .img {
+    border-radius: 5px;
+ }
